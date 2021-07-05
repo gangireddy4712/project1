@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            margin: 0;
+            background-color: #eee;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: #ffff;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            box-shadow: 3px 2px 20px #aaaaaa;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: grey;
+        }
+
+        li a.active {
+            background-color: #b6d1fc;
+            color: black;
+        }
+
+        li a:hover:not(.active) {
+            background-color: black;
+            color: white;
+        }
+
+        input {
+            width: 80%;
+            padding: 6px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 50px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            margin-left: 8%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li style="height:80px;"><a href="#Icon"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuS1QXNFL6F30cFJw3DBp0BDMjqW8lw_7_5A&usqp=CAU"
+                    alt="img" width="40px"></a></li>
+        <li><a href="#Students"><img src="https://i.pinimg.com/originals/d1/f3/cc/d1f3ccc7e836617fb6e5db7fed1ae90b.png"
+                    alt="img" width="50px">
+                <p>Students</p>
+            </a></li>
+        <li><a class="active" href="#lesson_Plan">
+                <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/study-plan-2184679-1830221.png" alt="img"
+                    width="50px">
+                <p>Lesson Plan</p>
+            </a></li>
+        <li><a href="#settings">
+                <img src="https://img.icons8.com/ios/452/settings--v2.png" alt="img" width="50px">
+                <p>Settings</p>
+            </a></li>
+    </ul>
+
+    <div style="margin-left:15%;height:80px;background-color:#ffffff"></div>
+
+    <div style="margin-left:16%;padding:30px;">
+        <b><img src="https://www.shareicon.net/data/512x512/2015/11/21/675402_arrows_512x512.png" alt="i" width="12px"> Videos </b>
+        <div style="text-align:center;margin-top:8%;">
+            <input type="url" name="url" placeholder="Enter url here">
+            <p><b>or</b></p>
+        </div>
+        <button><b>upload</b></button>
+    </div>
+</body>
+
+</html>
